@@ -1,0 +1,14 @@
+==================
+Description definition with short string
+==================
+
+Description(foo, "This is a description");
+
+---
+
+(diagram
+  (description_definition
+    (identifier)
+    (description)
+  )
+)

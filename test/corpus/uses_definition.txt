@@ -1,0 +1,20 @@
+==================
+Repository Definition with and without quoted identifier
+==================
+
+Uses(foo, bar);
+Uses("foo", bar);
+Uses(foo, "bar");
+Uses("foo", "bar");
+Uses("foo", "bar", "hello world");
+
+---
+
+(diagram
+  (uses_definition (identifier) (identifier) )
+  (uses_definition (identifier) (identifier) )
+  (uses_definition (identifier) (identifier) )
+  (uses_definition (identifier) (identifier) )
+  (uses_definition (identifier) (identifier) (purpose) )
+)
+

@@ -1,0 +1,11 @@
+repository(control_api, "https://github.com/example/control-api").
+description(control_api, "The control API for node_sync").
+uses(control_api, rust).
+uses(control_api, ruby).
+knows(lee, rust).
+can_work_on(Person, Project) :- knows(Person, Language), uses(Project, Language).
+owns(dario, node_sync).
+owns(lee, control_api).
+writes_to(node_sync, control_api).
+talks_to(ServiceA, ServiceB) :- writes_to(ServiceA, ServiceB); writes_to(ServiceB, ServiceA).
+needs_to_collaborate(Person, OtherPerson) :- owns(Person, Service), talksTo(Service, OtherService), owns(OtherPerson, OtherService).

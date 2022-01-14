@@ -1,0 +1,7 @@
+
+# the file supports comments
+
+Repository(foo, "http://example.com/");
+Description(foo, "this is a description");
+Uses(foo, bar);
+Uses(foo, bar, "hello world");

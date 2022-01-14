@@ -1,0 +1,12 @@
+==================
+Simple single line comment
+==================
+
+# hello world
+
+---
+
+(diagram
+  (comment)
+)
+

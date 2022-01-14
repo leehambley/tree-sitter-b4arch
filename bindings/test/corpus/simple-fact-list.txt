@@ -1,0 +1,22 @@
+==================
+Repository Definition with and without quoted
+strings and trailing semicolons.
+==================
+
+Repository(foo, "http://example.com")
+Repository("foo bar", "http://example.com");
+Repository("foo", "http://example.com");
+
+---
+
+(source_file
+  (Repository)
+    (asset_identifier)
+    (url)
+  (Repository)
+    (asset_identifier)
+    (url)
+  (Repository)
+    (asset_identifier)
+    (url)
+)
